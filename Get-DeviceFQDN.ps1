@@ -105,6 +105,7 @@ function Get-DeviceFQDN {
     
     # Set the current location to be the site code
     Set-Location "$($SiteCode):\" @initParams
+    
     $measure = Measure-Command {
         foreach ($deviceName in $Name) {
             # Retrieve the ResourceID of the device
